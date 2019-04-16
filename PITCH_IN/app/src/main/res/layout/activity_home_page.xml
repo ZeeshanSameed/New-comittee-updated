@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@drawable/as"
+    >
+        <include
+            android:id="@+id/tool1"
+            layout="@layout/toolbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+
+            >
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/newCommittee"
+
+                android:src="@drawable/newcommittee"
+                android:elevation="4dp"
+                android:background="@drawable/as"
+
+                />
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/current"
+                android:src="@drawable/current"
+                android:elevation="4dp"
+                android:background="@drawable/as"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/history"
+                android:src="@drawable/history"
+                android:elevation="4dp"
+                android:background="@drawable/as"
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/about"
+                android:src="@drawable/about"
+                android:elevation="4dp"
+                android:background="@drawable/as"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
